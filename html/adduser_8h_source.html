@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Terminarz: Plik źródłowy Calendar/adduser.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Terminarz
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Program do zarządzania wydarzeniami</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6dfeee327ebf526e9d30b1bc2d7175b8.html">Calendar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">adduser.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="adduser_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ADDUSER_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ADDUSER_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sqldatebase_8h.html">sqldatebase.h</a>&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="namespace_ui.html">   10</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_add_user.html">AddUser</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_add_user.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_add_user.html">AddUser</a> : <span class="keyword">public</span> QDialog</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_add_user.html">AddUser</a>(QWidget *parent = 0);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ~<a class="code" href="class_add_user.html">AddUser</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_add_user.html#a5c4cc1613c1727d1d2bd29d960c715f0">   34</a></span>&#160;    QString <a class="code" href="class_add_user.html#a5c4cc1613c1727d1d2bd29d960c715f0">adduserloginText</a>;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_add_user.html#acc886100ce0f0b2325872beb5a8ebda8">   35</a></span>&#160;    QString <a class="code" href="class_add_user.html#acc886100ce0f0b2325872beb5a8ebda8">addusernameText</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_add_user.html#a6fd318ee8f2c7fb7ce0ee2fed8301adc">   36</a></span>&#160;    QString <a class="code" href="class_add_user.html#a6fd318ee8f2c7fb7ce0ee2fed8301adc">addusersurnameText</a>;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_add_user.html#ae9d80fccab1c08150388357a7237470e">   37</a></span>&#160;    QString <a class="code" href="class_add_user.html#ae9d80fccab1c08150388357a7237470e">addpasswordText</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_add_user.html#a5d41e4ab6faf4b7d9aaf13bd617ac480">   38</a></span>&#160;    QString <a class="code" href="class_add_user.html#a5d41e4ab6faf4b7d9aaf13bd617ac480">addpasswordCypher</a>;</div><div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_add_user.html#a28ad084fc7bae1d00a91cc1c3605a3fd">   39</a></span>&#160;    QByteArray <a class="code" href="class_add_user.html#a28ad084fc7bae1d00a91cc1c3605a3fd">addCypher</a>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> on_buttonBox_accepted();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_add_user.html#ad0bf3c0122afe0fe672b494729156e62">   52</a></span>&#160;    Ui::AddUser *<a class="code" href="class_add_user.html#ad0bf3c0122afe0fe672b494729156e62">ui</a>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif // ADDUSER_H</span></div><div class="ttc" id="class_add_user_html_ad0bf3c0122afe0fe672b494729156e62"><div class="ttname"><a href="class_add_user.html#ad0bf3c0122afe0fe672b494729156e62">AddUser::ui</a></div><div class="ttdeci">Ui::AddUser * ui</div><div class="ttdef"><b>Definition:</b> adduser.h:52</div></div>
+<div class="ttc" id="class_add_user_html_a5c4cc1613c1727d1d2bd29d960c715f0"><div class="ttname"><a href="class_add_user.html#a5c4cc1613c1727d1d2bd29d960c715f0">AddUser::adduserloginText</a></div><div class="ttdeci">QString adduserloginText</div><div class="ttdef"><b>Definition:</b> adduser.h:34</div></div>
+<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> adduser.h:10</div></div>
+<div class="ttc" id="class_add_user_html_a28ad084fc7bae1d00a91cc1c3605a3fd"><div class="ttname"><a href="class_add_user.html#a28ad084fc7bae1d00a91cc1c3605a3fd">AddUser::addCypher</a></div><div class="ttdeci">QByteArray addCypher</div><div class="ttdef"><b>Definition:</b> adduser.h:39</div></div>
+<div class="ttc" id="class_add_user_html_a5d41e4ab6faf4b7d9aaf13bd617ac480"><div class="ttname"><a href="class_add_user.html#a5d41e4ab6faf4b7d9aaf13bd617ac480">AddUser::addpasswordCypher</a></div><div class="ttdeci">QString addpasswordCypher</div><div class="ttdef"><b>Definition:</b> adduser.h:38</div></div>
+<div class="ttc" id="class_add_user_html"><div class="ttname"><a href="class_add_user.html">AddUser</a></div><div class="ttdoc">Klasa okna Dodawania użytkownika Terminarza/Kalendarza. </div><div class="ttdef"><b>Definition:</b> adduser.h:18</div></div>
+<div class="ttc" id="sqldatebase_8h_html"><div class="ttname"><a href="sqldatebase_8h.html">sqldatebase.h</a></div></div>
+<div class="ttc" id="class_add_user_html_a6fd318ee8f2c7fb7ce0ee2fed8301adc"><div class="ttname"><a href="class_add_user.html#a6fd318ee8f2c7fb7ce0ee2fed8301adc">AddUser::addusersurnameText</a></div><div class="ttdeci">QString addusersurnameText</div><div class="ttdef"><b>Definition:</b> adduser.h:36</div></div>
+<div class="ttc" id="class_add_user_html_acc886100ce0f0b2325872beb5a8ebda8"><div class="ttname"><a href="class_add_user.html#acc886100ce0f0b2325872beb5a8ebda8">AddUser::addusernameText</a></div><div class="ttdeci">QString addusernameText</div><div class="ttdef"><b>Definition:</b> adduser.h:35</div></div>
+<div class="ttc" id="class_add_user_html_ae9d80fccab1c08150388357a7237470e"><div class="ttname"><a href="class_add_user.html#ae9d80fccab1c08150388357a7237470e">AddUser::addpasswordText</a></div><div class="ttdeci">QString addpasswordText</div><div class="ttdef"><b>Definition:</b> adduser.h:37</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

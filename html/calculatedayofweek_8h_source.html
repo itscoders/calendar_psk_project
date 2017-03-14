@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Terminarz: Plik źródłowy Calendar/calculatedayofweek.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Terminarz
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Program do zarządzania wydarzeniami</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6dfeee327ebf526e9d30b1bc2d7175b8.html">Calendar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">calculatedayofweek.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="calculatedayofweek_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CALCULATEDAYOFWEEK_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CALCULATEDAYOFWEEK_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;QMessageBox&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;QDate&quot;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">class </span><a class="code" href="class_calculate_day_of_week.html">CalculateDayOfWeek</a>;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;}</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_calculate_day_of_week.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_calculate_day_of_week.html">CalculateDayOfWeek</a> : <span class="keyword">public</span> QDialog</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_calculate_day_of_week.html">CalculateDayOfWeek</a>(QWidget *parent = 0);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ~<a class="code" href="class_calculate_day_of_week.html">CalculateDayOfWeek</a>();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_calculate_day_of_week.html#a81bc2d26e61b31b5511932c1caf177a5">   32</a></span>&#160;    <span class="keywordtype">int</span> numberOfDaysTable[12] = {0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334}; </div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_calculate_day_of_week.html#acace3ff617b3523dfd15801f8068c011">   33</a></span>&#160;    QString daysOfWeek[7]= {<span class="stringliteral">&quot;Monday&quot;</span>, <span class="stringliteral">&quot;Tuesday&quot;</span>, <span class="stringliteral">&quot;Wednesday&quot;</span>, <span class="stringliteral">&quot;Thursday&quot;</span>, <span class="stringliteral">&quot;Friday&quot;</span>, <span class="stringliteral">&quot;Saturday&quot;</span>, <span class="stringliteral">&quot;Sunday&quot;</span>};</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> intercalaryYear(<span class="keywordtype">int</span> year);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">int</span> fooDayWeek(<span class="keywordtype">int</span> day, <span class="keywordtype">int</span> month, <span class="keywordtype">int</span> year);</div><div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="class_calculate_day_of_week.html#ab31fa9af6be838060268a78aa29da665">   51</a></span>&#160;    QString <a class="code" href="class_calculate_day_of_week.html#ab31fa9af6be838060268a78aa29da665">day</a>;</div><div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_calculate_day_of_week.html#acbca071a4c9343ced93569c5bb72249e">   52</a></span>&#160;    QString <a class="code" href="class_calculate_day_of_week.html#acbca071a4c9343ced93569c5bb72249e">month</a>;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="class_calculate_day_of_week.html#a6219ba93a63ae882b56de3c1c3646014">   53</a></span>&#160;    QString <a class="code" href="class_calculate_day_of_week.html#a6219ba93a63ae882b56de3c1c3646014">year</a>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> on_buttonBox_accepted();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_calculate_day_of_week.html#a931df9ecc359a64a7d3f57ac67bb748d">   67</a></span>&#160;    Ui::CalculateDayOfWeek *<a class="code" href="class_calculate_day_of_week.html#a931df9ecc359a64a7d3f57ac67bb748d">ui</a>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;};</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif // CALCULATEDAYOFWEEK_H</span></div><div class="ttc" id="class_calculate_day_of_week_html_a931df9ecc359a64a7d3f57ac67bb748d"><div class="ttname"><a href="class_calculate_day_of_week.html#a931df9ecc359a64a7d3f57ac67bb748d">CalculateDayOfWeek::ui</a></div><div class="ttdeci">Ui::CalculateDayOfWeek * ui</div><div class="ttdef"><b>Definition:</b> calculatedayofweek.h:67</div></div>
+<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> adduser.h:10</div></div>
+<div class="ttc" id="class_calculate_day_of_week_html_ab31fa9af6be838060268a78aa29da665"><div class="ttname"><a href="class_calculate_day_of_week.html#ab31fa9af6be838060268a78aa29da665">CalculateDayOfWeek::day</a></div><div class="ttdeci">QString day</div><div class="ttdef"><b>Definition:</b> calculatedayofweek.h:51</div></div>
+<div class="ttc" id="class_calculate_day_of_week_html_a6219ba93a63ae882b56de3c1c3646014"><div class="ttname"><a href="class_calculate_day_of_week.html#a6219ba93a63ae882b56de3c1c3646014">CalculateDayOfWeek::year</a></div><div class="ttdeci">QString year</div><div class="ttdef"><b>Definition:</b> calculatedayofweek.h:53</div></div>
+<div class="ttc" id="class_calculate_day_of_week_html"><div class="ttname"><a href="class_calculate_day_of_week.html">CalculateDayOfWeek</a></div><div class="ttdoc">Klasa okna Oblicznia Dnia Tygodnia. </div><div class="ttdef"><b>Definition:</b> calculatedayofweek.h:16</div></div>
+<div class="ttc" id="class_calculate_day_of_week_html_acbca071a4c9343ced93569c5bb72249e"><div class="ttname"><a href="class_calculate_day_of_week.html#acbca071a4c9343ced93569c5bb72249e">CalculateDayOfWeek::month</a></div><div class="ttdeci">QString month</div><div class="ttdef"><b>Definition:</b> calculatedayofweek.h:52</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Terminarz: Plik źródłowy Calendar/sqldatebase.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Terminarz
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Program do zarządzania wydarzeniami</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6dfeee327ebf526e9d30b1bc2d7175b8.html">Calendar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">sqldatebase.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="sqldatebase_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef SQLDATEBASE_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define SQLDATEBASE_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QSqlDatabase&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;QSqlTableModel&gt;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QSqlQuery&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_sql_date_base.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_sql_date_base.html">SqlDateBase</a> : <span class="keyword">public</span> QObject</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_sql_date_base.html#a84da827b89b82dd5be05a2e7fca65f48">   19</a></span>&#160;    <span class="keyword">static</span> QString <a class="code" href="class_sql_date_base.html#a84da827b89b82dd5be05a2e7fca65f48">userpassword</a>;</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_sql_date_base.html#a727b2d438cec0709be5c6e5f1a37d710">   20</a></span>&#160;    <span class="keyword">static</span> QString <a class="code" href="class_sql_date_base.html#a727b2d438cec0709be5c6e5f1a37d710">userlogin</a>;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_sql_date_base.html#a6e89fcddd142aacecc50d8129d01dccc">SqlDateBase</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_date_base.html#a7ebf3de0b995ce5a34a6f55331b46d3f">connectDateBase</a>();</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sql_date_base.html#afcab0987512d4e3dcae029c3c07499d1">createConnectionWithDateBaseByUserAccount</a>(QString login, QString password);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sql_date_base.html#ac232dc7d0e28fcd401fa52a491695afe">insertEventToDateBase</a>(QString ename, QString elocation, QString einformation, QString edate);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sql_date_base.html#afaf4a6273976d0b48c74864b0e74e6ed">addNewUserToDataBase</a>(QString userl,QString usern, QString usersn, QString userpass);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sql_date_base.html#a0720d30315d54a10afa6908ae0df9710">isExistUserlogin</a>(QString userl);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="class_sql_date_base.html#a21e3da6560e13c840c18789516159f68">deleteAllEventFromDateBase</a>();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_sql_date_base.html#a3bc3ab09b143b5815c0195ced8611438">infoAboutEvent</a>(QString *ename,QString *elocation, QString *einformation, QString *edate);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif // SQLDATEBASE_H</span></div><div class="ttc" id="class_sql_date_base_html"><div class="ttname"><a href="class_sql_date_base.html">SqlDateBase</a></div><div class="ttdoc">Klasa do zarządzania komunikacją z bazą danych. </div><div class="ttdef"><b>Definition:</b> sqldatebase.h:13</div></div>
+<div class="ttc" id="class_sql_date_base_html_a0720d30315d54a10afa6908ae0df9710"><div class="ttname"><a href="class_sql_date_base.html#a0720d30315d54a10afa6908ae0df9710">SqlDateBase::isExistUserlogin</a></div><div class="ttdeci">static bool isExistUserlogin(QString userl)</div><div class="ttdoc">Metoda sprawdzająca czy użytkownik o podanym loginie jest już w bazie. </div><div class="ttdef"><b>Definition:</b> sqldatebase.cpp:127</div></div>
+<div class="ttc" id="class_sql_date_base_html_afaf4a6273976d0b48c74864b0e74e6ed"><div class="ttname"><a href="class_sql_date_base.html#afaf4a6273976d0b48c74864b0e74e6ed">SqlDateBase::addNewUserToDataBase</a></div><div class="ttdeci">static bool addNewUserToDataBase(QString userl, QString usern, QString usersn, QString userpass)</div><div class="ttdoc">Metoda dodająca nowego użytkownika do bazy. </div><div class="ttdef"><b>Definition:</b> sqldatebase.cpp:85</div></div>
+<div class="ttc" id="class_sql_date_base_html_a727b2d438cec0709be5c6e5f1a37d710"><div class="ttname"><a href="class_sql_date_base.html#a727b2d438cec0709be5c6e5f1a37d710">SqlDateBase::userlogin</a></div><div class="ttdeci">static QString userlogin</div><div class="ttdef"><b>Definition:</b> sqldatebase.h:20</div></div>
+<div class="ttc" id="class_sql_date_base_html_a6e89fcddd142aacecc50d8129d01dccc"><div class="ttname"><a href="class_sql_date_base.html#a6e89fcddd142aacecc50d8129d01dccc">SqlDateBase::SqlDateBase</a></div><div class="ttdeci">SqlDateBase()</div><div class="ttdoc">Konstruktor Klasy SqlDateBase. </div></div>
+<div class="ttc" id="class_sql_date_base_html_a84da827b89b82dd5be05a2e7fca65f48"><div class="ttname"><a href="class_sql_date_base.html#a84da827b89b82dd5be05a2e7fca65f48">SqlDateBase::userpassword</a></div><div class="ttdeci">static QString userpassword</div><div class="ttdef"><b>Definition:</b> sqldatebase.h:19</div></div>
+<div class="ttc" id="class_sql_date_base_html_ac232dc7d0e28fcd401fa52a491695afe"><div class="ttname"><a href="class_sql_date_base.html#ac232dc7d0e28fcd401fa52a491695afe">SqlDateBase::insertEventToDateBase</a></div><div class="ttdeci">static bool insertEventToDateBase(QString ename, QString elocation, QString einformation, QString edate)</div><div class="ttdoc">Metoda dodająca event do bazy. </div><div class="ttdef"><b>Definition:</b> sqldatebase.cpp:58</div></div>
+<div class="ttc" id="class_sql_date_base_html_a3bc3ab09b143b5815c0195ced8611438"><div class="ttname"><a href="class_sql_date_base.html#a3bc3ab09b143b5815c0195ced8611438">SqlDateBase::infoAboutEvent</a></div><div class="ttdeci">static void infoAboutEvent(QString *ename, QString *elocation, QString *einformation, QString *edate)</div><div class="ttdoc">Metoda dodająca event do bazy. </div></div>
+<div class="ttc" id="class_sql_date_base_html_afcab0987512d4e3dcae029c3c07499d1"><div class="ttname"><a href="class_sql_date_base.html#afcab0987512d4e3dcae029c3c07499d1">SqlDateBase::createConnectionWithDateBaseByUserAccount</a></div><div class="ttdeci">static bool createConnectionWithDateBaseByUserAccount(QString login, QString password)</div><div class="ttdoc">Metoda tworząca połączenie konta użytkownika z baządanych. </div><div class="ttdef"><b>Definition:</b> sqldatebase.cpp:29</div></div>
+<div class="ttc" id="class_sql_date_base_html_a21e3da6560e13c840c18789516159f68"><div class="ttname"><a href="class_sql_date_base.html#a21e3da6560e13c840c18789516159f68">SqlDateBase::deleteAllEventFromDateBase</a></div><div class="ttdeci">static bool deleteAllEventFromDateBase()</div><div class="ttdoc">Metoda usuwająca wszystkie wydarzenia danego użytkownika. </div><div class="ttdef"><b>Definition:</b> sqldatebase.cpp:105</div></div>
+<div class="ttc" id="class_sql_date_base_html_a7ebf3de0b995ce5a34a6f55331b46d3f"><div class="ttname"><a href="class_sql_date_base.html#a7ebf3de0b995ce5a34a6f55331b46d3f">SqlDateBase::connectDateBase</a></div><div class="ttdeci">static void connectDateBase()</div><div class="ttdoc">Metoda tworząca połączenie z istniejącą bazą danych. </div><div class="ttdef"><b>Definition:</b> sqldatebase.cpp:6</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

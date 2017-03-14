@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Terminarz: Plik źródłowy Calendar/insertmenueventwindow.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Terminarz
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Program do zarządzania wydarzeniami</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6dfeee327ebf526e9d30b1bc2d7175b8.html">Calendar</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">insertmenueventwindow.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="insertmenueventwindow_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INSERTMENUEVENTWINDOW_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INSERTMENUEVENTWINDOW_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;QDialog&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="sqldatebase_8h.html">sqldatebase.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;QMessageBox&gt;</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_ui.html">Ui</a> {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_insert_menu_event_window.html">InsertMenuEventWindow</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;}</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_insert_menu_event_window.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_insert_menu_event_window.html">InsertMenuEventWindow</a> : <span class="keyword">public</span> QDialog</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    Q_OBJECT</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="class_insert_menu_event_window.html">InsertMenuEventWindow</a>(QWidget *parent = 0);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    ~<a class="code" href="class_insert_menu_event_window.html">InsertMenuEventWindow</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="class_insert_menu_event_window.html#ad28a7d0cfdc85d60ae98d45a5d0429fe">   35</a></span>&#160;    QString <a class="code" href="class_insert_menu_event_window.html#ad28a7d0cfdc85d60ae98d45a5d0429fe">eventName</a>;</div><div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_insert_menu_event_window.html#afcdea155c41c7c7e01eb11080f97e537">   36</a></span>&#160;    QString <a class="code" href="class_insert_menu_event_window.html#afcdea155c41c7c7e01eb11080f97e537">eventLocation</a>;</div><div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_insert_menu_event_window.html#a82d955d2796d42428348459722b4e8f3">   37</a></span>&#160;    QString <a class="code" href="class_insert_menu_event_window.html#a82d955d2796d42428348459722b4e8f3">eventInfo</a>;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="class_insert_menu_event_window.html#a8f2745aaef3140a4d0b711aa2d6bea9d">   38</a></span>&#160;    QString <a class="code" href="class_insert_menu_event_window.html#a8f2745aaef3140a4d0b711aa2d6bea9d">eventDate</a>;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span> slots:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> on_buttonBox_accepted();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> on_calendarWidget_clicked(<span class="keyword">const</span> QDate &amp;date);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_insert_menu_event_window.html#a80bf6d737ae48a95623fb17ef48b9b73">   55</a></span>&#160;    Ui::InsertMenuEventWindow *<a class="code" href="class_insert_menu_event_window.html#a80bf6d737ae48a95623fb17ef48b9b73">ui</a>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif // INSERTMENUEVENTWINDOW_H</span></div><div class="ttc" id="class_insert_menu_event_window_html_a8f2745aaef3140a4d0b711aa2d6bea9d"><div class="ttname"><a href="class_insert_menu_event_window.html#a8f2745aaef3140a4d0b711aa2d6bea9d">InsertMenuEventWindow::eventDate</a></div><div class="ttdeci">QString eventDate</div><div class="ttdef"><b>Definition:</b> insertmenueventwindow.h:38</div></div>
+<div class="ttc" id="class_insert_menu_event_window_html_afcdea155c41c7c7e01eb11080f97e537"><div class="ttname"><a href="class_insert_menu_event_window.html#afcdea155c41c7c7e01eb11080f97e537">InsertMenuEventWindow::eventLocation</a></div><div class="ttdeci">QString eventLocation</div><div class="ttdef"><b>Definition:</b> insertmenueventwindow.h:36</div></div>
+<div class="ttc" id="class_insert_menu_event_window_html_a80bf6d737ae48a95623fb17ef48b9b73"><div class="ttname"><a href="class_insert_menu_event_window.html#a80bf6d737ae48a95623fb17ef48b9b73">InsertMenuEventWindow::ui</a></div><div class="ttdeci">Ui::InsertMenuEventWindow * ui</div><div class="ttdef"><b>Definition:</b> insertmenueventwindow.h:55</div></div>
+<div class="ttc" id="namespace_ui_html"><div class="ttname"><a href="namespace_ui.html">Ui</a></div><div class="ttdef"><b>Definition:</b> adduser.h:10</div></div>
+<div class="ttc" id="class_insert_menu_event_window_html_ad28a7d0cfdc85d60ae98d45a5d0429fe"><div class="ttname"><a href="class_insert_menu_event_window.html#ad28a7d0cfdc85d60ae98d45a5d0429fe">InsertMenuEventWindow::eventName</a></div><div class="ttdeci">QString eventName</div><div class="ttdef"><b>Definition:</b> insertmenueventwindow.h:35</div></div>
+<div class="ttc" id="class_insert_menu_event_window_html_a82d955d2796d42428348459722b4e8f3"><div class="ttname"><a href="class_insert_menu_event_window.html#a82d955d2796d42428348459722b4e8f3">InsertMenuEventWindow::eventInfo</a></div><div class="ttdeci">QString eventInfo</div><div class="ttdef"><b>Definition:</b> insertmenueventwindow.h:37</div></div>
+<div class="ttc" id="sqldatebase_8h_html"><div class="ttname"><a href="sqldatebase_8h.html">sqldatebase.h</a></div></div>
+<div class="ttc" id="class_insert_menu_event_window_html"><div class="ttname"><a href="class_insert_menu_event_window.html">InsertMenuEventWindow</a></div><div class="ttdoc">Klasa okna dodawania eventu bezpośrednio z menu okna głównego(Obiekt klasy CalendarWindow) ...</div><div class="ttdef"><b>Definition:</b> insertmenueventwindow.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

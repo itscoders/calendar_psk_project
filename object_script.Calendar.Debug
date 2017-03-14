@@ -1,0 +1,17 @@
+INPUT(
+./debug\main.o
+./debug\calendarwindow.o
+./debug\logwindow.o
+./debug\inserteventwindow.o
+./debug\insertmenueventwindow.o
+./debug\sqldatebase.o
+./debug\adduser.o
+./debug\calculatedayofweek.o
+./debug\moc_calendarwindow.o
+./debug\moc_logwindow.o
+./debug\moc_inserteventwindow.o
+./debug\moc_insertmenueventwindow.o
+./debug\moc_sqldatebase.o
+./debug\moc_adduser.o
+./debug\moc_calculatedayofweek.o
+);
